@@ -1,1 +1,3 @@
-# odin-sign-up-form
+# Sign Up Form
+
+Demonstration of a Sign-up Form.
