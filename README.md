@@ -1,3 +1,3 @@
 # Sign Up Form
 
-Demonstration of a Sign-up Form.
+This project demonstrates my understanding on creating a basic form page.
