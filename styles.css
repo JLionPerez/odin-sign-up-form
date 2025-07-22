@@ -13,6 +13,7 @@ body {
     align-items: center;
     flex-direction: column;
     background-color: #080b05;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .container {
@@ -20,7 +21,6 @@ body {
     width: 70%;
     height: 100%;
     background-color: white;
-    /* flex-shrink: 0; */
 }
 
 .left-side {
@@ -33,7 +33,7 @@ body {
 }
 
 .logo-box, .svg-wrapper {
-    top: 25%;
+    top: 20%;
 }
 
 .image-background {
@@ -44,14 +44,17 @@ body {
 .logo-box {
     transform: translateY(-50%);
     width: 100%;
-    background-color: white;
-    opacity: 5%;
-    height: 125px;
+    background-color: black;
+    opacity: 50%;
+    height: 150px;
 }
 
 .svg-wrapper {
     left: 50%;
     transform: translate(-50%,-50%);
+    font-family: "Edu NSW ACT Cursive", cursive;
+    font-style: normal;
+    font-weight: bold;
 }
 
 #photo_credit {
@@ -60,7 +63,15 @@ body {
     transform: translate(-50%, -50%);
     color: white;
     text-align: center;
-    font-size: 1rem;
+    font-size: 12px;
+}
+
+a.image-link:link {
+    color: white;
+}
+
+a.image-link:visited {
+    color: violet;
 }
 
 .right-side {
