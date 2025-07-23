@@ -1,3 +1,5 @@
+/* Below applies to all of the page */
+
 * {
     padding: 0;
     margin: 0;
@@ -13,7 +15,7 @@ body {
     align-items: center;
     flex-direction: column;
     background-color: #080b05;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: "Edu NSW ACT Cursive", cursive;
 }
 
 .container {
@@ -22,6 +24,8 @@ body {
     height: 100%;
     background-color: white;
 }
+
+/* Below is everything on the LEFT side of the page */
 
 .left-side {
     position: relative;
@@ -52,8 +56,6 @@ body {
 .svg-wrapper {
     left: 50%;
     transform: translate(-50%,-50%);
-    font-family: "Edu NSW ACT Cursive", cursive;
-    font-style: normal;
     font-weight: bold;
 }
 
@@ -66,16 +68,113 @@ body {
     font-size: 12px;
 }
 
-a.image-link:link {
+a:link {
     color: white;
 }
 
-a.image-link:visited {
-    color: violet;
+a:visited {
+    color: #d896ff;
+}
+
+/*  Below is everything on the RIGHT side of the page  */
+
+.right-side, .form-container, .nested-form-container, form {
+    display: flex;
 }
 
 .right-side {
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+    background-color: whitesmoke;
+}
+
+.header {
     display: flex;
     flex-direction: column;
-    flex-shrink: 1;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex-grow: 1;
+    padding-left: 50px;
+    padding-bottom: 50px;
+    gap: 20px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.form-container {
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 20px 50px;
+    background-color: white;
+    box-shadow: 0 10px 5px -5px lightgray;
+    height: 30%;
+    gap: 20px;
+}
+
+.nested-form-container {
+    gap: 60px;
+}
+
+form {
+    flex-direction: column;
+}
+
+label {
+    font-size: small;
+}
+
+input {
+    margin-bottom: 10px;
+    height: 20px;
+    width: 200px;
+    border-radius: 2px;
+    border: 1px solid lightgray;
+    transition: 0.15s;
+    outline: none;
+}
+
+input:focus {
+    border: 1.5px solid #be29ec;
+    box-shadow: 4px 4px 8px lightgray;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 20px 50px;
+    font-size: 12px;
+    gap: 20px;
+}
+
+button {
+    height: 40px;
+    width: 200px;
+    font-family: "Edu NSW ACT Cursive", cursive;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #33401c;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 4px 4px 4px lightgray;
+    transition-duration: 0.15s;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #6b8e23;
+    color: #33401c;
+}
+
+a#foot_link:link {
+    color:#33401c;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a#foot_link:visited {
+    color:#6b8e23
 }
