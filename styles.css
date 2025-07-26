@@ -135,8 +135,12 @@ input {
 }
 
 input:focus {
-    border: 1.5px solid #be29ec;
+    border-color: #be29ec;
     box-shadow: 4px 4px 8px lightgray;
+}
+
+input:invalid {
+    border-color: red;
 }
 
 .footer {
